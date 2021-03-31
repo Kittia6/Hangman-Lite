@@ -14,9 +14,9 @@ namespace Hangman_Lite
     public partial class HangmanLite : Form
     {
         string word, displayWord, guess;
-        int guessNum,index;
+        int guessNum,index,index2;
         List<string> guesses = new List<string>();
-        static List<string> words = new List<string>() {"ABSURD","BOXCAR","DUPLEX","ICEBOX","INJURY","JIGSAW","JOCKEY","JOYFUL","LARYNX","PSYCHE"};
+        static List<string> words = new List<string>() {"ABSURD","BOXCAR","DUPLEX","ICEBOX","INJURY","JIGSAW","JOCKEY","JOYFUL","LARYNX","PSYCHE","GALAXY","GOSSIP","COBWEB","HYPHEN","RHYTHM"};
         static Random rnd = new Random();
         static int rndindex = rnd.Next(words.Count);
         string rndword = words[rndindex];
@@ -46,6 +46,11 @@ namespace Hangman_Lite
                 index = word.IndexOf(guess);
                 displayWord = displayWord.Remove(index, 1);
                 displayWord = displayWord.Insert(index, guess);
+
+                index2 = word.LastIndexOf(guess);
+                displayWord = displayWord.Remove(index2, 1);
+                displayWord = displayWord.Insert(index2, guess);
+
                 lblWord.Text = displayWord;
                 if (displayWord == word)
                 {

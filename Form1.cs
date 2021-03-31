@@ -16,9 +16,12 @@ namespace Hangman_Lite
         string word, displayWord, guess;
         int guessNum,index;
         List<string> guesses = new List<string>();
+        static List<string> words = new List<string>() {"ABSURD","BOXCAR","DUPLEX","ICEBOX","INJURY","JIGSAW","JOCKEY","JOYFUL","LARYNX","PSYCHE"};
+        static Random rnd = new Random();
+        static int rndindex = rnd.Next(words.Count);
+        string rndword = words[rndindex];
 
-
-
+        
         public HangmanLite()
         {
             InitializeComponent();
@@ -26,8 +29,8 @@ namespace Hangman_Lite
 
         private void HangmanLite_Load(object sender, EventArgs e)
         {
-            word = "COMPUTER";
-            displayWord = "________";
+            word = rndword;
+            displayWord = "------";
             lblWord.Text = displayWord;
             guessNum = 0;
         }
@@ -44,7 +47,14 @@ namespace Hangman_Lite
                 displayWord = displayWord.Remove(index, 1);
                 displayWord = displayWord.Insert(index, guess);
                 lblWord.Text = displayWord;
-
+                if (displayWord == word)
+                {
+                    lblResult.ForeColor = Color.Green;
+                    lblResult.Text = "You Win!";
+                    SoundPlayer win = new SoundPlayer(Properties.Resources.WinSoundEffect);
+                    win.Play();
+                }
+          
             }
             else
             {

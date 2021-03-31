@@ -169,5 +169,23 @@ namespace Hangman_Lite.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream LosingSoundEffect {
+            get {
+                return ResourceManager.GetStream("LosingSoundEffect", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream WinSoundEffect {
+            get {
+                return ResourceManager.GetStream("WinSoundEffect", resourceCulture);
+            }
+        }
     }
 }

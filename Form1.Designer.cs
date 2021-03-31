@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.imgHangman = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblDesc = new System.Windows.Forms.Label();
             this.lblGuesses = new System.Windows.Forms.Label();
@@ -37,20 +36,9 @@
             this.btnGuess = new System.Windows.Forms.Button();
             this.txtGuess = new System.Windows.Forms.TextBox();
             this.lblResult = new System.Windows.Forms.Label();
+            this.imgHangman = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imgHangman)).BeginInit();
             this.SuspendLayout();
-            // 
-            // imgHangman
-            // 
-            this.imgHangman.Image = global::Hangman_Lite.Properties.Resources.Hangmanblank;
-            this.imgHangman.Location = new System.Drawing.Point(64, 102);
-            this.imgHangman.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.imgHangman.Name = "imgHangman";
-            this.imgHangman.Size = new System.Drawing.Size(453, 362);
-            this.imgHangman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.imgHangman.TabIndex = 0;
-            this.imgHangman.TabStop = false;
-            this.imgHangman.Click += new System.EventHandler(this.imgHangman_Click);
             // 
             // lblTitle
             // 
@@ -67,12 +55,12 @@
             // 
             this.lblDesc.AutoSize = true;
             this.lblDesc.Font = new System.Drawing.Font("Book Antiqua", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDesc.Location = new System.Drawing.Point(283, 63);
+            this.lblDesc.Location = new System.Drawing.Point(329, 65);
             this.lblDesc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDesc.Name = "lblDesc";
-            this.lblDesc.Size = new System.Drawing.Size(338, 18);
+            this.lblDesc.Size = new System.Drawing.Size(218, 18);
             this.lblDesc.TabIndex = 2;
-            this.lblDesc.Text = "Enter letters to reveal the word. You have 3 strikes.";
+            this.lblDesc.Text = "Enter letters to reveal the word. ";
             // 
             // lblGuesses
             // 
@@ -136,6 +124,18 @@
             this.lblResult.Name = "lblResult";
             this.lblResult.Size = new System.Drawing.Size(137, 28);
             this.lblResult.TabIndex = 8;
+            // 
+            // imgHangman
+            // 
+            this.imgHangman.Image = global::Hangman_Lite.Properties.Resources.Hangmanblank;
+            this.imgHangman.Location = new System.Drawing.Point(64, 102);
+            this.imgHangman.Margin = new System.Windows.Forms.Padding(4);
+            this.imgHangman.Name = "imgHangman";
+            this.imgHangman.Size = new System.Drawing.Size(453, 362);
+            this.imgHangman.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgHangman.TabIndex = 0;
+            this.imgHangman.TabStop = false;
+            this.imgHangman.Click += new System.EventHandler(this.imgHangman_Click);
             // 
             // HangmanLite
             // 

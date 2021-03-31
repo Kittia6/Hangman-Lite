@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Hangman_Lite
 {
@@ -78,6 +79,8 @@ namespace Hangman_Lite
                     btnGuess.Enabled = false;
                     txtGuess.Enabled = false;
                     lblResult.Text = "Game Over";
+                    SoundPlayer lose = new SoundPlayer(Properties.Resources.LosingSoundEffect);
+                    lose.Play();
                 }
             }
         }

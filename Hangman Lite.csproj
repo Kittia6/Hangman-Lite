@@ -113,5 +113,11 @@
   <ItemGroup>
     <None Include="Resources\HangmanFull.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LosingSoundEffect.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WinSoundEffect.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

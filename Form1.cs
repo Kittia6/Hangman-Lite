@@ -33,7 +33,7 @@ namespace Hangman_Lite
 
         private void btnGuess_Click(object sender, EventArgs e)
         {
-            guess = txtGuess.Text;
+            guess = txtGuess.Text.ToUpper();
             
             
 
@@ -54,15 +54,27 @@ namespace Hangman_Lite
 
                 if (guessNum == 1)
                 {
-                    imgHangman.Image = Properties.Resources.hangman_1;
+                    imgHangman.Image = Properties.Resources.Hangman1;
                 }
                 else if (guessNum == 2)
                 {
-                    imgHangman.Image = Properties.Resources.hangman_2;
+                    imgHangman.Image = Properties.Resources.Hangman2;
+                }
+                else if (guessNum == 3)
+                {
+                    imgHangman.Image = Properties.Resources.Hangman3;
+                }
+                else if (guessNum == 4)
+                {
+                    imgHangman.Image = Properties.Resources.Hangman4;
+                }
+                else if (guessNum == 5)
+                {
+                    imgHangman.Image = Properties.Resources.Hangman5;
                 }
                 else
                 {
-                    imgHangman.Image = Properties.Resources.hangman_dead;
+                    imgHangman.Image = Properties.Resources.HangmanFull;
                     btnGuess.Enabled = false;
                     txtGuess.Enabled = false;
                     lblResult.Text = "Game Over";

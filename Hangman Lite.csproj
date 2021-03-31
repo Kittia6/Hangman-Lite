@@ -92,5 +92,26 @@
   <ItemGroup>
     <None Include="Resources\hangman_empty.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hangmanblank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hangman1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hangman2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hangman3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hangman4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hangman5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HangmanFull.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

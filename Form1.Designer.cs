@@ -77,7 +77,6 @@
             this.lblWord.Name = "lblWord";
             this.lblWord.Size = new System.Drawing.Size(533, 84);
             this.lblWord.TabIndex = 4;
-            this.lblWord.Text = "label4";
             this.lblWord.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lstGuessedLetters
@@ -92,13 +91,14 @@
             // 
             // btnGuess
             // 
+            this.btnGuess.BackColor = System.Drawing.Color.Lavender;
             this.btnGuess.Font = new System.Drawing.Font("Book Antiqua", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuess.Location = new System.Drawing.Point(525, 341);
             this.btnGuess.Name = "btnGuess";
             this.btnGuess.Size = new System.Drawing.Size(65, 24);
             this.btnGuess.TabIndex = 6;
             this.btnGuess.Text = "Guess";
-            this.btnGuess.UseVisualStyleBackColor = true;
+            this.btnGuess.UseVisualStyleBackColor = false;
             this.btnGuess.Click += new System.EventHandler(this.btnGuess_Click);
             // 
             // txtGuess
@@ -132,6 +132,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.GhostWhite;
             this.ClientSize = new System.Drawing.Size(637, 535);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.txtGuess);
